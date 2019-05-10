@@ -33,6 +33,12 @@ class toolbar extends StatelessWidget {
           ],
         )
       ),
+
+      bottomNavigationBar: new BottomNavigationBar(items: [
+        new BottomNavigationBarItem(icon: new Icon(Icons.add),title:new Text("add")),
+        new BottomNavigationBarItem(icon: new Icon(Icons.print),title:new Text("print")),
+        new BottomNavigationBarItem(icon: new Icon(Icons.call),title:new Text("call"))
+      ],)
     );
   }
 
