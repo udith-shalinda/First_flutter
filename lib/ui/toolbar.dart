@@ -12,6 +12,27 @@ class toolbar extends StatelessWidget {
           new IconButton(icon: new Icon(Icons.search), onPressed: pressSearch),
         ],
       ),
+
+      //other properties
+      backgroundColor: Colors.grey.shade200,
+      body: new Container(
+        alignment: Alignment.center,
+        child:new Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            new Text(
+                "Hello there",
+                style: new TextStyle(
+                  fontStyle: FontStyle.italic,
+                  fontWeight: FontWeight.w800,
+                  fontSize: 35,
+                  color: Colors.red
+                ),
+            )
+
+          ],
+        )
+      ),
     );
   }
 
