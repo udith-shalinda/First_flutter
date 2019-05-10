@@ -8,16 +8,34 @@ class MyApp extends StatelessWidget {
         color: Colors.blue,
         alignment: Alignment.center,
 
-        child: new Text(
+        child:new Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            new Text(
             "Hello there!",
-            textDirection: TextDirection.ltr,
-            style: new TextStyle(
-              fontSize: 34,
-              fontWeight: FontWeight.w800,
-              fontStyle: FontStyle.italic,
-              color: Colors.red,
+              textDirection: TextDirection.ltr,
+              style: new TextStyle(
+                fontSize: 34,
+                fontWeight: FontWeight.w800,
+                fontStyle: FontStyle.italic,
+                color: Colors.red,
+              ),
             ),
-        ),
+
+            new Text(
+              "Hello there!!!",
+              textDirection: TextDirection.ltr,
+              style: new TextStyle(
+                fontSize: 34,
+                fontWeight: FontWeight.w800,
+                fontStyle: FontStyle.italic,
+                color: Colors.red,
+              ),
+            ),
+
+          ],
+        )
+
 
     );
   }
