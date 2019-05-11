@@ -34,6 +34,12 @@ class toolbar extends StatelessWidget {
         )
       ),
 
+      floatingActionButton: FloatingActionButton(
+          onPressed: null,
+          backgroundColor: Colors.greenAccent,
+          child: new Icon(Icons.add),
+      ),
+      
       bottomNavigationBar: new BottomNavigationBar(items: [
         new BottomNavigationBarItem(icon: new Icon(Icons.add),title:new Text("add")),
         new BottomNavigationBarItem(icon: new Icon(Icons.print),title:new Text("print")),
